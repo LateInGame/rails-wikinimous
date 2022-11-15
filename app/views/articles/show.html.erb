@@ -1,4 +1,6 @@
 <h2><%= @article.title %></h2>
-<p><%= @article.content%></p>
-<%= link_to 'Back to list', articles_path  %>
+<p><%= @article.content %></p>
+
+
+<%= link_to 'Home', articles_path  %>
 <%= link_to 'Edit a task', edit_article_path(@article) %>

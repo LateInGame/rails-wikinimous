@@ -15,7 +15,7 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     @article.save # Will raise ActiveModel::ForbiddenAttributesError
-    redirect_to article_path(@article)
+    redirect_to articles_path(@articles)
   end
 
   def edit
